@@ -5,6 +5,34 @@ ChatGPT API is an artificial intelligence language model developed by OpenAI tha
 
 To use the ChatGPT API, you will need to sign up for an API key from OpenAI. Once you have your API key, you can use it to make requests to the API and receive responses in JSON format.
 
+Here's an example of how to use the ChatGPT API in Python:
+
+```import openai
+import json
+
+# Set up your API key
+openai.api_key = "YOUR_API_KEY"
+
+# Define your prompt
+prompt = "Hello, how are you today?"
+
+# Set up the API request
+response = openai.Completion.create(
+    engine="davinci",
+    prompt=prompt,
+    max_tokens=60,
+    n=1,
+    stop=None,
+    temperature=0.5,
+)
+
+# Extract the response text from the JSON object
+answer = response.choices[0].text.strip()
+
+# Print the response
+print(answer)
+```
+
 ## What is Nextra?
 
 A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
