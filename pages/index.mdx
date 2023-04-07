@@ -1,42 +1,22 @@
-# Introduction
- 
+## Welcome to Docs-er!
 
-ChatGPT API is an artificial intelligence language model developed by OpenAI that can generate human-like responses to text-based inputs. It is based on the GPT (Generative Pre-trained Transformer) architecture and has been trained on a massive amount of text data to generate coherent and contextually relevant responses.
+Whether you're building a complex application or a simple library, high-quality documentation is key to helping your users understand and use your code effectively. That's where Docs-er comes in. Docs-er is a powerful documentation tool designed to make it easy for developers to create and maintain world-class documentation.
 
-To use the ChatGPT API, you will need to sign up for an API key from OpenAI. Once you have your API key, you can use it to make requests to the API and receive responses in JSON format.
+### Introduction
 
-Here's an example of how to use the ChatGPT API in Python:
+At its core, Docs-er is a documentation generator that takes in your code, comments, and other metadata, and produces a beautiful, functional website that your users can browse to learn more about your project. Whether you're documenting a single function or an entire application, Docs-er has all the features you need to keep your users informed and engaged.
 
-```py import openai
-import json
+With Docs-er, you don't have to worry about the tedious process of manually writing documentation. Instead, you can focus on what you do best: creating great code. Docs-er automates the documentation process, so you can spend more time building and less time documenting.
 
-# Set up your API key
-openai.api_key = "YOUR_API_KEY"
+### What Is Docs-er?
 
-# Define your prompt
-prompt = "Hello, how are you today?"
+Docs-er is built to support a wide range of programming languages, frameworks, and tools, so no matter what you're working on, there's a good chance that Docs-er can help you document it.
 
-# Set up the API request
-response = openai.Completion.create(
-    engine="davinci",
-    prompt=prompt,
-    max_tokens=60,
-    n=1,
-    stop=None,
-    temperature=0.5,
-)
+Here are just a few reasons to choose Docs-er for your documentation needs:
 
-# Extract the response text from the JSON object
-answer = response.choices[0].text.strip()
+- **Powerful features**: Docs-er has all the features you need to create world-class documentation, including code highlighting, search functionality, and customizable themes.
+- **Easy to use**: Docs-er has a user-friendly interface that makes it easy to get started, even if you're new to documentation.
+- **Flexible**: Docs-er can be customized to meet your specific needs, with plugins and other features that can be added as needed.
+- **Scalable**: Docs-er is built to scale along with your project, so you don't have to worry about outgrowing it as your needs change.
 
-# Print the response
-print(answer)
-```
-
-## What is Nextra?
-
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
-
-## Documentation
-
-The documentation is available at [https://nextra.site](https://nextra.site).
+We hope you'll give Docs-er a try, and see for yourself what makes it one of the best documentation tools available today.
