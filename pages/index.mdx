@@ -50,39 +50,3 @@ The Pilion Tax bot is a powerful extension of the Pilion Tax website, designed t
 
 ```discord
 /tax 1000
-```
-
-This command calculates the ProBot tax for a transfer amount of 1000.
-
-### Set Tax Channel (Moderator)
-
-```discord
-/set-tax1 #tax-calculations
-```
-
-This command sets the tax calculator channel for category 1 (English).
-
-## Example Code Integration
-
-```javascript
-const Discord = require('discord.js');
-const client = new Discord.Client();
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-client.on('message', msg => {
-  if (msg.content === '/tax 1000') {
-    msg.reply('The ProBot tax for 1000 is X.');
-  }
-});
-
-client.login('YOUR_BOT_TOKEN');
-```
-
-This simple bot listens for the `/tax` command and responds with the calculated ProBot tax.
-
-## Conclusion
-
-The Pilion Tax bot is your ultimate solution for managing ProBot tax calculations within Discord. Its comprehensive features, sleek interface, and customizable settings make it an indispensable tool for ProBot users. Get started today and streamline your tax calculations with ease!
