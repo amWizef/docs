@@ -7,7 +7,7 @@ const config: DocsThemeConfig = {
     link: '',
   },
   chat: {
-    link: 'https://discord.gg/rKcdNQd6zF',
+    link: 'https://discord.gg/ocea',
   },
   docsRepositoryBase: '',
   footer: {
