@@ -1,6 +1,4 @@
-# Pilion Tax Bot Documentation
-
-## Introduction
+# Pilion Tax Bot
 
 The Pilion Tax bot is a powerful extension of the Pilion Tax website, designed to provide accessible and streamlined ProBot tax calculation services within Discord. With the Pilion Tax bot, you can easily manage your ProBot tax calculations without leaving the app.
 
@@ -41,4 +39,50 @@ The Pilion Tax bot is a powerful extension of the Pilion Tax website, designed t
 
 ## Getting Started
 
-Get started with Pilion Tax bot today and streamline your tax calculations with ease. Follow the instructions to add the bot to your server and begin using its features to manage your ProBot taxes efficiently.
+1. **Add the Bot to Your Server:** Invite the Pilion Tax bot to your Discord server using the invite link provided on the Pilion Tax website.
+2. **Configure the Bot:** Use the moderator commands to set up your tax calculator channels and customize the bot to fit your server's needs.
+3. **Calculate Your Tax:** Use the `/tax` command to calculate your ProBot tax quickly and easily.
+4. **Manage Feedback:** Use the `/feedback` command to send suggestions or report issues, helping us improve the bot for everyone.
+
+## Example Command Usage
+
+### Calculate Tax
+
+```discord
+/tax 1000
+```
+
+This command calculates the ProBot tax for a transfer amount of 1000.
+
+### Set Tax Channel (Moderator)
+
+```discord
+/set-tax1 #tax-calculations
+```
+
+This command sets the tax calculator channel for category 1 (English).
+
+## Example Code Integration
+
+```javascript
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === '/tax 1000') {
+    msg.reply('The ProBot tax for 1000 is X.');
+  }
+});
+
+client.login('YOUR_BOT_TOKEN');
+```
+
+This simple bot listens for the `/tax` command and responds with the calculated ProBot tax.
+
+## Conclusion
+
+The Pilion Tax bot is your ultimate solution for managing ProBot tax calculations within Discord. Its comprehensive features, sleek interface, and customizable settings make it an indispensable tool for ProBot users. Get started today and streamline your tax calculations with ease!
